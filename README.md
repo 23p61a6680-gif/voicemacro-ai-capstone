@@ -36,9 +36,9 @@
 ## `> show --demo`
 
 ### 🎥 Live App Demo
-<video src="assets/demo_video.mp4" controls="controls" style="max-width: 100%;"></video>
+[![Demo Video](assets/welcome_page.png)](https://drive.google.com/file/d/18YtnXA_SlYqTzQm7Qg3MxOuNL4a5faBX/view?usp=sharing)
 
-*If the video above doesn't render, [click here to view the demo video](assets/demo_video.mp4).*
+*▶️ [Click here or on the image above to watch the full Demo Video on Google Drive](https://drive.google.com/file/d/18YtnXA_SlYqTzQm7Qg3MxOuNL4a5faBX/view?usp=sharing)*
 
 ### 📸 App Walkthrough & Screenshots
 
