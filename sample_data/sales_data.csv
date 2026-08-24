@@ -1,0 +1,11 @@
+Date,Customer,Region,Product,Category,Quantity,Revenue,Cost,Profit,Salesperson
+2023-01-01,Acme Corp,North,Widget A,Hardware,100,5000,3000,2000,Alice
+2023-01-05,Beta LLC,South,Widget B,Hardware,50,3000,2000,1000,Bob
+2023-01-10,Charlie Inc,East,Service X,Software,1,10000,2000,8000,Charlie
+2023-01-15,Delta Co,West,Widget A,Hardware,200,9500,6000,3500,Alice
+2023-02-01,Acme Corp,North,Service Y,Software,1,15000,3000,12000,Bob
+2023-02-15,Echo Ltd,South,Widget C,Hardware,150,7500,5000,2500,Charlie
+2023-03-01,Beta LLC,East,Service X,Software,2,19000,4000,15000,Alice
+2023-03-10,Delta Co,West,Widget B,Hardware,75,4500,3000,1500,Bob
+2023-04-05,Acme Corp,North,Widget C,Hardware,300,14000,10000,4000,Charlie
+2023-04-20,Echo Ltd,South,Service Y,Software,1,16000,3500,12500,Alice
