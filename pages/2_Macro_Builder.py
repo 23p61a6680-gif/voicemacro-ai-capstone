@@ -16,16 +16,20 @@ st.title("⚙️ Macro Builder")
 st.header("1. Upload Dataset")
 uploaded_file = st.file_uploader("Upload CSV or Excel file", type=['csv', 'xlsx', 'xls'])
 
-if uploaded_file is not None and st.session_state.get('original_df') is None:
-    try:
-        df = DataProcessor.load_data(uploaded_file)
-        st.session_state.original_df = df.copy()
-        st.session_state.current_df = df.copy()
-        st.success("File uploaded successfully!")
-        st.rerun()
-    except Exception as e:
-        st.error(f"Error loading file: {e}")
-
+if uploaded_file is not None:
+    if st.session_state.get('uploaded_filename') != uploaded_file.name:
+        try:
+            df = DataProcessor.load_data(uploaded_file)
+            st.session_state.original_df = df.copy()
+            st.session_state.current_df = df.copy()
+            st.session_state.uploaded_filename = uploaded_file.name
+            st.session_state.history = []
+            if 'last_generated' in st.session_state:
+                del st.session_state.last_generated
+            st.success("New file uploaded successfully!")
+            st.rerun()
+        except Exception as e:
+            st.error(f"Error loading file: {e}")
 if st.session_state.get('current_df') is not None:
     df = st.session_state.current_df
     
