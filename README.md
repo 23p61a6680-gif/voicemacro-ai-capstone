@@ -36,7 +36,9 @@
 ## `> show --demo`
 
 ### 🎥 Live App Demo
-<video src="https://github.com/23p61a6680-gif/voicemacro-ai-capstone/raw/main/assets/demo_video.mp4" controls="controls" style="max-width: 100%;"></video>
+<video src="assets/demo_video.mp4" controls="controls" style="max-width: 100%;"></video>
+
+*If the video above doesn't render, [click here to view the demo video](assets/demo_video.mp4).*
 
 ### 📸 App Walkthrough & Screenshots
 
