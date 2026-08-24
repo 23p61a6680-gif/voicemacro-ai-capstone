@@ -40,29 +40,35 @@
 
 ### 📸 App Walkthrough & Screenshots
 
-#### 1. Macro Builder (The Core AI Engine)
-![Macro Builder](assets/macro_builder.png)
-> **What is this?** The main interface where you upload datasets and give natural language commands.
-> **How does it work?** You can type, speak (using the mic), or take a photo of a command. Gemini AI translates your intent into safe Python/Pandas code.
-> **What is the result?** The data is instantly transformed, and Plotly charts are generated automatically based on the new data shape.
+#### 1. Welcome Page (Home)
+![Welcome Page](assets/welcome_page.png)
+> **What is this?** The landing page for VoiceMacro AI.
+> **How does it work?** Introduces the core concepts: Voice & Text input, Safe Execution, and Visual Analytics.
+> **What is the result?** A clean, professional entry point guiding the user to the sidebar.
 
 #### 2. KPI Dashboard (Live Telemetry)
-![Dashboard](assets/dashboard.png)
+![Dashboard](assets/dashboard_page.png)
 > **What is this?** A high-level overview of your active dataset.
 > **How does it work?** It tracks the number of rows, columns, and missing values.
 > **What is the result?** As you run AI macros, the `st.metric` cards show live green/red deltas (arrows) comparing your current transformed dataset against the original file.
 
-#### 3. AI Data Insights (Human-Readable Analysis)
-![Data Insights](assets/data_insights.png)
-> **What is this?** A conversational analytics engine.
-> **How does it work?** Instead of generating code, Gemini reads the statistical summary of your data and answers questions in plain English (e.g., "Roast my expenses").
-> **What is the result?** Non-technical users get instant, readable insights without needing to understand the underlying data transformations.
+#### 3. Macro Builder (The Core AI Engine & Custom Graphs)
+![Macro Builder](assets/macro_builder_graphs.png)
+> **What is this?** The main interface where you upload datasets, give natural language commands, and build interactive charts.
+> **How does it work?** You can type, speak, or take a photo of a command. The bottom section features a Custom Graph Builder to manually plot your data.
+> **What is the result?** The data is instantly transformed safely, and you can visualize it using Plotly without writing any code.
 
 #### 4. Dataset Explorer (Interactive Editing)
-![Dataset Explorer](assets/dataset_explorer.png)
-> **What is this?** A spreadsheet-like view of your current data state.
+![Dataset Explorer](assets/dataset_explorer_page.png)
+> **What is this?** A spreadsheet-like view of your current data state along with descriptive statistics.
 > **How does it work?** Uses `st.data_editor` to allow you to manually double-click and edit any cell if the AI missed something.
-> **What is the result?** Click "Save Edits" to lock in manual changes, and export the final cleaned CSV to your local machine.
+> **What is the result?** Complete visibility into your dataset's statistical summary and raw values.
+
+#### 5. About (Open Source Branding)
+![About](assets/about_page.png)
+> **What is this?** The project information and licensing page.
+> **How does it work?** Displays terminal-style ASCII art and dynamic project badges.
+> **What is the result?** Gives the capstone project a highly professional, polished developer aesthetic.
 
 ## `> cat features.txt`
 
