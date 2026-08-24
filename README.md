@@ -20,17 +20,32 @@
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
-![Status](https://img.shields.io/badge/Status-Live-brightgreen?style=flat-square)
-![Python](https://img.shields.io/badge/Python-3.11%2B-blue?style=flat-square)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.31%2B-FF4B4B?style=flat-square)
-![Gemini](https://img.shields.io/badge/AI-Google%20Gemini%203.6-orange?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+[![Live Demo](https://img.shields.io/badge/Live_App-Play_Demo-FF4B4B?style=for-the-badge&logo=streamlit)](https://voicemacro-ai-capstone-g83xqs5z6durqciqv3aurk.streamlit.app/)
+![Python](https://img.shields.io/badge/Python-3.11%2B-blue?style=for-the-badge)
+![Gemini](https://img.shields.io/badge/AI-Google%20Gemini%203.6-orange?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 ---
 
 ## `> whoami`
 
 > **VoiceMacro AI** is a production-grade, AI-powered spreadsheet automation engine that converts natural language commands — typed, spoken, or photographed — into safe, executable Pandas and Excel VBA code. Built as a B.Tech Capstone project at **MirAI School of Technology**.
+
+**🚀 Experience it live:** [VoiceMacro AI Web App](https://voicemacro-ai-capstone-g83xqs5z6durqciqv3aurk.streamlit.app/)
+
+## `> show --demo`
+
+### 🎥 Live App Demo
+![Demo Video](assets/demo_video.webp)
+
+### 📸 App Screenshots
+| Dashboard Overview | Macro Builder |
+|:---:|:---:|
+| ![Dashboard](assets/dashboard.png) | ![Macro Builder](assets/macro_builder.png) |
+
+| AI Data Insights | Dataset Explorer |
+|:---:|:---:|
+| ![Data Insights](assets/data_insights.png) | ![Dataset Explorer](assets/data_insights.png) |
 
 ## `> cat features.txt`
 
