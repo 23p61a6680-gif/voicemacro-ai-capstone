@@ -22,8 +22,9 @@ RULES FOR pandas_code:
 1. The input dataframe is always named `df`.
 2. Do NOT wrap the code in a function.
 3. The output MUST be assigned back to `df` if it modifies the whole dataframe (e.g., `df = df[df['A'] > 5]`).
-4. Only use standard Pandas operations.
+4. Only use standard Pandas data manipulation operations.
 5. Code must be single-line or basic multi-line without complex logic loops.
+6. DO NOT generate ANY plotting or visualization code (no matplotlib, no seaborn, no df.plot). The system automatically renders charts based on the resulting dataframe. Only output data transformation code.
 """
 
     @staticmethod
