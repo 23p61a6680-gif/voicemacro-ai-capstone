@@ -36,7 +36,7 @@
 ## `> show --demo`
 
 ### 🎥 Live App Demo
-![Demo Video](assets/demo_video.webp)
+<video src="https://github.com/23p61a6680-gif/voicemacro-ai-capstone/raw/main/assets/demo_video.mp4" controls="controls" style="max-width: 100%;"></video>
 
 ### 📸 App Walkthrough & Screenshots
 
