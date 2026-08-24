@@ -13,35 +13,34 @@ class VisualizationEngine:
         numeric_cols = df.select_dtypes(include='number').columns.tolist()
         cat_cols = df.select_dtypes(include=['object', 'category', 'str']).columns.tolist()
 
-        if not numeric_cols:
-            st.info("No numeric columns found for visualization.")
-            return
-
         st.subheader("📊 Data Visualizations")
         
         tab1, tab2 = st.tabs(["Auto Graphs", "Custom Graph Builder"])
         
         with tab1:
-            st.caption("Automatic distributions based on your data.")
-            col1, col2 = st.columns(2)
-            with col1:
-                target_col = numeric_cols[0]
-                fig_hist = px.histogram(df, x=target_col, title=f"Distribution of {target_col}")
-                st.plotly_chart(fig_hist, use_container_width=True)
-                
-            with col2:
-                if cat_cols and len(df[cat_cols[0]].unique()) < 40:
-                    cat_col = cat_cols[0]
-                    grouped = df.groupby(cat_col)[target_col].sum().reset_index()
-                    fig_bar = px.bar(grouped, x=cat_col, y=target_col, 
-                                     title=f"Total {target_col} by {cat_col}")
-                    st.plotly_chart(fig_bar, use_container_width=True)
-                elif len(numeric_cols) > 1:
-                    fig_scatter = px.scatter(df, x=numeric_cols[0], y=numeric_cols[1],
-                                             title=f"{numeric_cols[0]} vs {numeric_cols[1]}")
-                    st.plotly_chart(fig_scatter, use_container_width=True)
-                else:
-                    st.info("Add categorical data for more automatic charts.")
+            if not numeric_cols:
+                st.info("No numeric columns found for automatic visualization. Use the Custom Graph Builder to manually create charts (e.g., counting categories).")
+            else:
+                st.caption("Automatic distributions based on your data.")
+                col1, col2 = st.columns(2)
+                with col1:
+                    target_col = numeric_cols[0]
+                    fig_hist = px.histogram(df, x=target_col, title=f"Distribution of {target_col}")
+                    st.plotly_chart(fig_hist, use_container_width=True)
+                    
+                with col2:
+                    if cat_cols and len(df[cat_cols[0]].unique()) < 40:
+                        cat_col = cat_cols[0]
+                        grouped = df.groupby(cat_col)[target_col].sum().reset_index()
+                        fig_bar = px.bar(grouped, x=cat_col, y=target_col, 
+                                         title=f"Total {target_col} by {cat_col}")
+                        st.plotly_chart(fig_bar, use_container_width=True)
+                    elif len(numeric_cols) > 1:
+                        fig_scatter = px.scatter(df, x=numeric_cols[0], y=numeric_cols[1],
+                                                 title=f"{numeric_cols[0]} vs {numeric_cols[1]}")
+                        st.plotly_chart(fig_scatter, use_container_width=True)
+                    else:
+                        st.info("Add categorical data for more automatic charts.")
                     
         with tab2:
             st.caption("Build your own custom graph from the current dataset.")
